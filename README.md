@@ -8,26 +8,26 @@
 ### Free viewer for lay6 PCB format files [here...](https://www.electronic-software-shop.com/lng/en/support/free-viewer-software/) 
 
 ### Pinout of the connector:
-1 - I2C SDA
-2 - I2C SCL
-3 - I2S DOUT
-4 - I2S DIN
-5 - MCLK 16MHz output
-6 - I2S LRCLK
-7 - n_RES output, high level when MCLK is ready to use 
-8 - I2S BCLK
-9 - CW input for TX CW forming control, high level is active
-10 - OF output, ADC overflow
-11 - 5V power supply
-12 - GND
+-1 - I2C SDA
+-2 - I2C SCL
+-3 - I2S DOUT
+-4 - I2S DIN
+-5 - MCLK 16MHz output
+-6 - I2S LRCLK
+-7 - n_RES output, high level when MCLK is ready to use 
+-8 - I2S BCLK
+-9 - CW input for TX CW forming control, high level is active
+-10 - OF output, ADC overflow
+-11 - 5V power supply
+-12 - GND
 
 ### The power supply voltage is 5 Volt, 120 mA.
 
 ### Input/output data format is a classic I2S bus, slave mode, 32 bits per sample.
 
 ### Control bus is I2C, slave mode, the exchange protocol includes 11 bytes:
-Start -> Address -> RXF3(MSB)_byte -> RXF2_byte -> RXF1_byte -> RXF0(LSB)_byte -> 
--> TXF3(MSB)_byte -> TXF2_byte -> TXF1_byte -> TXF0(LSB)_byte -> SRATE -> TXLEVEL-> Stop
+    \ Start -> Address -> RXF3(MSB)_byte -> RXF2_byte -> RXF1_byte -> RXF0(LSB)_byte -> 
+    \-> TXF3(MSB)_byte -> TXF2_byte -> TXF1_byte -> TXF0(LSB)_byte -> SRATE -> TXLEVEL-> Stop
 
  Where:
  Address byte is alwaise 0xD2,
