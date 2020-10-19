@@ -30,7 +30,7 @@
     -> TXF3(MSB)_byte -> TXF2_byte -> TXF1_byte -> TXF0(LSB)_byte -> SRATE -> TXLEVEL-> Stop
 
     Where:
-    Address byte is alwaise 0xD2,
+    Address byte is always 0xD2,
     RXF - 32 bit or 4 bytes of receiver frequency
     TXF - 32 bit or 4 bytes of transmitter frequency
     SRATE - sample rate code, 1 Byte, 0 - 48 kHz, 1 - 96 kHz, 2 - 192 kHz, 3 - 240 kHz, 4 - 384 kHz, 5 - 480 kHz, 6 - 640 kHz, 7 - 960 kHz
